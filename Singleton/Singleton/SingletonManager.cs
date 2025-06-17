@@ -6,7 +6,8 @@ namespace Singleton;
 public sealed class SingletonManager {
   private static SingletonManager _instance;
   private readonly List<string> _test;
-  private int c ;
+  private int c;
+  
   public SingletonManager() {
     _test = [];
   }
