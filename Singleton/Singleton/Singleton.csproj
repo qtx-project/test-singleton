@@ -14,7 +14,7 @@
     <OutputPath>$(MyQuantowerPath)\..\..\Settings\Scripts\Indicators\Singleton</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath$(MyQuantowerPath)\..\..\Settings\Scripts\Indicators\Singleton</OutputPath>
+    <OutputPath>$(MyQuantowerPath)\..\..\Settings\Scripts\Indicators\Singleton</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="TradingPlatform.BusinessLayer">
