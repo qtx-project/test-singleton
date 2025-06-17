@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Platforms>AnyCPU</Platforms>
+    <AlgoType>Indicator</AlgoType>
+    <AssemblyName>Foo</AssemblyName>
+    <RootNamespace>Foo</RootNamespace>
+    <MyQuantowerPath>$(AMP_QUANTOWER_SDK_PATH)</MyQuantowerPath>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>$(MyQuantowerPath)\..\..\Settings\Scripts\Indicators\Foo</OutputPath>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>$(MyQuantowerPath)\..\..\Settings\Scripts\Indicators\Foo</OutputPath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="TradingPlatform.BusinessLayer">
+      <HintPath>$(MyQuantowerPath)\bin\TradingPlatform.BusinessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+ 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Singleton">
+      <HintPath>$(MyQuantowerPath)\Settings\Scripts\Indicators\Singleton\Singleton.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  
+</Project>
